@@ -175,7 +175,7 @@ function Admin()
         <div id ="cancelouterdiv">
             <br></br>
             <h1>
-                Flight deleted from the flights database.
+                Flight is deleted from the flights database.
             </h1>
         </div>
 
