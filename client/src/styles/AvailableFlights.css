@@ -1,0 +1,9 @@
+#searchresultdiv
+{
+    text-align: left;
+    overflow: hidden;
+    width:5000px;
+    height: 500px;
+    display: inline-block;
+    align-content: baseline;
+}

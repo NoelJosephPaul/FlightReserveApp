@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "AIRLINE";
+  src: url("C:\Users\HP\Desktop\NOEL\JavaScript\my-app\client\src\styles\Brixton Medium.ttf");
+  src: url("C:\Users\HP\Desktop\NOEL\JavaScript\my-app\client\src\styles\Brixton Light.ttf");
+}
+
+@font-face {
+  font-family: "cursive";
+  src: url("C:\Users\HP\Desktop\NOEL\JavaScript\my-app\client\src\styles\JennaSue.ttf");}
+
+@font-face {
+  font-family: "emirates";
+  src: url("C:\Users\HP\Desktop\NOEL\JavaScript\my-app\client\src\styles\Emirates Medium.ttf");}
+  
+
+  .home {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: top;
+    align-items: left;
+    align-content: space-between;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "emirates";
+    text-align: left;
+  }
+  
+  .headerContainer {
+    width: auto;
+    margin-left: 50px;
+  }
+  
+  .headerContainer h1 {
+    justify-content: center;
+    align-items: top;
+    font-size: 90px;
+    height: 50px;
+    font-weight: 50;
+    color: black;
+    font-family: "emirates";
+  }
+  
+  .headerContainer p {
+    padding: 0;
+    font-size: 70px;
+    height: 30px;
+    font-weight: lighter;
+    position:relative; left:290px; top:2px;
+    font-family: "cursive";
+    color: black;
+  }
+ 
+  a.button1{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #000000;
+    margin:0 0.3em 0.3em 0;
+    border-radius:8px;
+
+    box-sizing: border-box;
+    text-decoration:none;
+    position:relative; left:390px; top:3px;
+    font-family:"emirates";
+    font-weight:300;
+    height: 50px;
+    color:#010000;
+    text-align:center;
+    line-height: 33px;
+    transition: all 0.2s;
+    top:60px;
+    }
+    a.button1:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+    @media all and (max-width:30em){
+    a.button1{
+    display:block;
+    margin:0.4em auto;
+    }
+    }
+
+@media only screen and (max-width: 650px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .headerContainer {
+    margin-left: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121619;
+    color: white;
+  }
+
+  .headerContainer h1 {
+    font-size: 40px;
+    height: 30px;
+    color: white;
+  }
+
+  .headerContainer p {
+    font-size: 30px;
+    color: white;
+  }
+
+  
+}

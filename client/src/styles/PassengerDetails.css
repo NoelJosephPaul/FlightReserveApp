@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'emirates';
+    src: url("C:\Users\HP\Desktop\NOEL\JavaScript\my-app\client\src\styles\Emirates Medium.ttf");}
+  
+
+div #test2
+{
+    font-family: 'emirates';
+    text-align: left ;
+    align-items: flex-start;
+    align-content:flex-start;
+    width:1500px;
+}
+
+.footer
+{
+    
+    bottom:0;
+}
+
+
+div form
+{
+    border:1px solid black;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.5);
+}
+
+body form input
+{
+    border:  1px solid black;
+    margin-left:0px;
+}
+body form label
+{
+    text-align: left;
+    align-content: flex-start;
+    font-weight: bolder;
+    color:darkblue;
+    
+}
+div input
+{
+    text-align:left ;
+}
+div button
+{
+    background-color: darkblue;
+    height: 10px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+body
+{
+    text-align: center;
+    align-content: center;
+    background-color: ghostwhite;
+}
+
+#Gender ,#FlightClass {
+    
+    font-size: large;
+    font-family: 'emirates';
+    width: 200px;
+    height: 50px;
+
+}
+
+body div #showselectedflight
+{
+    font-size: 50px ;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    background-image: url("../assets/passdetails.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:none;
+}
+
+body div #showselectedflight p
+{
+    font-size: large;
+}
+
+body div #showselectedflight h3
+{
+    font-size: 30px;
+}
+
+body form select
+{
+    text-align: left;
+    width:100px;
+}
