@@ -11,6 +11,8 @@ import PassengerDetails from "./pages/PassengerDetails";
 import AvailableFlights from "./pages/AvailableFlights";
 import ETicket from "./pages/ETicket";
 import CancelTicket from "./pages/CancelTicket";
+import RescheduleTicket from "./pages/RescheduleTicket";
+
 import Admin from "./pages/Admin";
 import Login from "./pages/Login";
 
@@ -31,6 +33,7 @@ function App() {
           <Route path="/AvailableFlights" element={<AvailableFlights />} />
           <Route path="/ETicket" element={<ETicket/>} />
           <Route path="/Cancelticket" element={<CancelTicket/>} />
+          <Route path="/RescheduleTicket" element={<RescheduleTicket/>} />
           <Route path="/Admin" element={<Admin/>} />
           <Route path="/Login" element={<Login/>} />
 

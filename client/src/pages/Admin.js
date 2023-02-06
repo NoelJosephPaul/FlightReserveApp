@@ -28,8 +28,8 @@ function Admin()
         }).then(() => {
             console.log("success");
         });
-    }
-    setoption(1);
+        setoption(4);
+      }
     addFlightdetails();
     }
     const getFlight = () => {
@@ -66,16 +66,28 @@ function Admin()
             {
                 option===0 &&   
                 <div>
-                    <button onClick={addFlight}>Add Flight</button>
+                  <br></br><br></br><br></br>
+                    <button onClick={()=>setoption(1)}>Add Flight</button>
                     <br></br>
-                    <button onClick={getFlight}>Delete Flight</button>
+                    <button onClick={()=>setoption(2)}>Delete Flight</button>
                     
+                </div>
+            }
+            {
+                option===4 &&
+                <div>
+                  <h1>Flight added to database</h1>
+                  <br></br>
+                  <button onClick={()=>setoption(1)}>Add more flights</button>
+                  <br></br>
+                  <button onClick={()=>setoption(0)}>Main Menu</button>
                 </div>
             }
             {
                 option===1 &&
                 <div>
                     <form id="addflightform">
+                    <h1>Enter Flight Details</h1>
                     <label>
                     Flight No:<br></br>
                     <input type="text" required onChange={(e) => setFlightNo(e.target.value)}  />
@@ -108,7 +120,7 @@ function Admin()
             }
             { option ===2  &&
             <div id="cancelouterdiv">
-        <h1>Enter your Flight No</h1>
+        <h1>Enter Flight No</h1>
         <br></br>
         <input
           id="FlightNo"
@@ -171,8 +183,10 @@ function Admin()
         <div id ="cancelouterdiv">
             <br></br>
             <h1>
-                Flight is deleted from the flights database.
+                Flight deleted from database.
             </h1>
+            <br></br>
+            <button onClick={()=>setoption(0)}>Main Menu</button>
         </div>
 
     }

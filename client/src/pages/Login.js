@@ -37,7 +37,7 @@ function Login() {
 
       <button onClick={check}>Log in</button>
     
-{loginstate===1 ?window.open("http://localhost:3000/Admin","_self"):<div>Status: Not Logged In</div>
+{loginstate===1 ?window.open("http://localhost:3000/Admin","_self"):<div><br></br>Status: Not Logged In</div>
 
 }
 
