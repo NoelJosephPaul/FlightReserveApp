@@ -1,0 +1,15 @@
+#adminbody
+{
+    height:700px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#adminbody button
+{
+    margin:10px;
+}
+.footer
+{
+    display: none;
+}

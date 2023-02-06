@@ -93,7 +93,7 @@ function Passenger() {
   };
 
   return (
-    <body>
+    <body id ="passengerdetailsbody">
     { isSubmitClicked===false &&
       <div id="test2">
         <div id="showselectedflight">
@@ -113,6 +113,7 @@ function Passenger() {
           <h3>Fare: &#8377; {Fare}</h3>
         </div>
         <form id ="passengerdetails">
+          <br></br>
           <h1>Enter Passenger Details</h1>
           <label>
             Name:<br></br>

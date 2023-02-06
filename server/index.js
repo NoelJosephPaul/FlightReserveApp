@@ -32,7 +32,6 @@ const db = mysql.createConnection({
 app.get("/flight", (req, res) => {
   const Departure = req.query.Departure;
   const Arrival = req.query.Arrival;
-  ///const sqlSelect ='SELECT * FROM flight WHERE Departure = ? AND Arrival = ?;';
   db.query(
     "select * from flight where departure = ? and arrival = ?;",
     [Departure, Arrival],
@@ -48,7 +47,6 @@ app.get("/flight", (req, res) => {
 
 app.get("/flightinfo", (req, res) => {
   const FlightNo=req.query.FlightNo;
-  ///const sqlSelect ='SELECT * FROM flight WHERE Departure = ? AND Arrival = ?;';
   db.query(
     "select * from flight where Flightno = ?",
     [FlightNo],
@@ -115,37 +113,6 @@ app.delete("/flight",(req,res) =>{
   })
 })
 
-
-
-app.listen(3001, () => {
-  //start app
-  console.log("running on port 3001");
-});
-/*const express = require('express')
-const bodyParser = require('body-parser')
-const cors = require("cors")
-const app = express()
-const mysql = require("mysql")
-
-const db = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "password",
-    database: "flightreservationsystem"
-});
-
-app.use(cors())
-app.use(express.json())
-app.use(bodyParser.urlencoded({extended: true}))
-
-app.get('/api/get',(req, res)=>{
-
-    const sqlSelect = "SELECT* FROM flight; "
-    db.query(sqlSelect,(err,result)=>{
-        res.send(result);
-    })
-
-})*/
 app.post("/addPassenger", (req, res) => {
   const TicketNo = req.body.TicketNo;
   const FlightNo = req.body.FlightNo;
@@ -202,3 +169,7 @@ app.delete("/passenger",(req,res) =>{
     })
     
 })*/
+app.listen(3001, () => {
+  //start app
+  console.log("running on port 3001");
+});

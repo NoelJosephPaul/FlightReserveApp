@@ -107,3 +107,8 @@
     display: none;
   }
 }
+
+.navbar .leftSide h1
+{
+  color:white;
+}

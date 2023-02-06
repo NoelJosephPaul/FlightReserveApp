@@ -1,5 +1,6 @@
 import React,{ useState } from "react";
 import Axios from "axios";
+import "../styles/Admin.css";
 
 
 function Admin()
@@ -39,13 +40,15 @@ function Admin()
           },
         }).then((response) => {
           setFlightInfo(response.data);
+          if(response.data.length===0)
+          {
+            alert("No flight found");
+          }
         });
       };
 
     const deleteFlight = () =>
-    {
-        
-            
+    {   
           const deleteFlightDetails = () => {
             Axios.delete("http://localhost:3001/flight", {
               params: {
@@ -58,15 +61,8 @@ function Admin()
           deleteFlightDetails();
           setoption(3)
     }
-/*
-    function updateflight()
-    {
-        
-    }
-    */
-    
     return (
-        <body>
+        <body id ="adminbody">
             {
                 option===0 &&   
                 <div>
@@ -175,7 +171,7 @@ function Admin()
         <div id ="cancelouterdiv">
             <br></br>
             <h1>
-                Flight deleted from database.
+                Flight is deleted from the flights database.
             </h1>
         </div>
 
