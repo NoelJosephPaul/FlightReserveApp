@@ -10,8 +10,8 @@ function About() {
       ></div>
       <div className="aboutBottom">
         <h1> ABOUT US</h1>
-        <p>
-          Welcome to our airline reservation system! We are a team of dedicated
+        <p id="About">
+          Welcome to flyWithUs.com We are a team of dedicated
           travel professionals who have come together to create a simple and
           efficient way for you to book your flights. Our system is
           user-friendly and allows you to search for and compare flights from

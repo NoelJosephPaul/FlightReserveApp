@@ -12,6 +12,8 @@ import AvailableFlights from "./pages/AvailableFlights";
 import ETicket from "./pages/ETicket";
 import CancelTicket from "./pages/CancelTicket";
 import Admin from "./pages/Admin";
+import Login from "./pages/Login";
+
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
           <Route path="/ETicket" element={<ETicket/>} />
           <Route path="/Cancelticket" element={<CancelTicket/>} />
           <Route path="/Admin" element={<Admin/>} />
+          <Route path="/Login" element={<Login/>} />
+
 
         </Routes>
         <Footer />

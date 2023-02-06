@@ -10,7 +10,7 @@ function Home() {
       <div className="headerContainer">
         <h1 id ="companyname"> flyWithUs.com </h1>
         <p> The flight of dreams</p>
-        <Link to="/menu">
+        <Link to="/booking2">
           <a href="something" class="button1">
             BOOK NOW
           </a>

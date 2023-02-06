@@ -31,27 +31,35 @@
   
   .headerContainer {
     width: auto;
-    margin-left: 50px;
+    margin-left: 0px;
   }
   
   .headerContainer h1 {
     justify-content: center;
+    margin-left: 100px;
+    margin-top: 250px;
     align-items: top;
     font-size: 90px;
     height: 50px;
     font-weight: 50;
-    color: black;
+    color: darkblue;
+    text-decoration: solid black;
     font-family: "emirates";
+    
   }
   
+
+
+
   .headerContainer p {
     padding: 0;
-    font-size: 70px;
+    font-size: 50px;
     height: 30px;
     font-weight: lighter;
-    position:relative; left:290px; top:2px;
+    position:relative; left:400px; top:5px;
     font-family: "cursive";
     color: black;
+    
   }
  
   a.button1{
@@ -60,10 +68,10 @@
     border:0.1em solid #000000;
     margin:0 0.3em 0.3em 0;
     border-radius:8px;
-
+    width:550px;
     box-sizing: border-box;
     text-decoration:none;
-    position:relative; left:390px; top:3px;
+    position:relative; left:100px; top:0px;
     font-family:"emirates";
     font-weight:300;
     height: 50px;
@@ -71,7 +79,7 @@
     text-align:center;
     line-height: 33px;
     transition: all 0.2s;
-    top:60px;
+    top:40px;
     }
     a.button1:hover{
     color:#000000;
@@ -106,8 +114,9 @@
 
   .headerContainer h1 {
     font-size: 40px;
-    height: 30px;
+    height: 100px;
     color: white;
+    left: 2000px;
   }
 
   .headerContainer p {

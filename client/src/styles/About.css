@@ -2,10 +2,13 @@
   font-family: "emirates";
   src: url("C:\Users\HP\Desktop\NOEL\JavaScript\my-app\client\src\styles\Emirates Medium.ttf");}
 
-p
+div #About
 {
   font-family: "emirates";
+  font-size: large;
 }
+
+
 
 h1
 {
