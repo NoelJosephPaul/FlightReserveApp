@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Booking2.css";
+import "../styles/AvailableFlights.css";
 import Axios from "axios";
 
 let count = 0;
@@ -64,7 +65,7 @@ function AvailableFlights() {
   }
 
   return (
-    <body>
+    <body id="avai">
   { istableempty===false &&
     <div id="availflights">
       <h3>Available Flights</h3>

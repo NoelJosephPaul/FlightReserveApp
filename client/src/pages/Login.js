@@ -8,7 +8,7 @@ function Login() {
   const [loginstate,setLogin]=useState(0)
   function check()
   {
-    if(usernamestate==='Nikhil' && passwordstate==="password")
+    if(usernamestate==='Admin' && passwordstate==="password")
     {setLogin(1)}
   }
   return (

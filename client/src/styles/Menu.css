@@ -1,12 +1,12 @@
 @font-face {
   font-family: "AIRLINE";
-  src: url("C:\Users\HP\Desktop\NOEL\JavaScript\my-app\client\src\styles\Brixton Medium.ttf");
-  src: url("C:\Users\HP\Desktop\NOEL\JavaScript\my-app\client\src\styles\Brixton Light.ttf");
+  src: url("./Brixton\ Medium.ttf");
+  src: url("./Brixton\ Light.ttf");
 }
 
 @font-face {
   font-family: "cursive";
-  src: url("C:\Users\HP\Desktop\NOEL\JavaScript\my-app\client\src\styles\JennaSue.ttf");}
+  src: url("./JennaSue.ttf");}
 
 
 .menu {

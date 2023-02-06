@@ -35,9 +35,11 @@ function CancelTicket() {
     setCount(1)
   };
   return (
-    <body>
+    <body id="cancelticketbody">
     { count===0 &&
       <div id="cancelouterdiv">
+        <h3>Cancel your booking</h3>
+        <br></br>
         <h1>Enter your Ticket No</h1>
         <br></br>
         <input
