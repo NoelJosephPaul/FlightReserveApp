@@ -63,8 +63,7 @@ function ETicket()
                    <br></br>
 
                    {PassengerInfo.map((val, key) => {
-                    let DepartDate=val.DepartDate;
-                    DepartDate=DepartDate.toString().split("T")[0];
+                    
                     
         return (
           <div className="ShowResults">
@@ -73,7 +72,7 @@ function ETicket()
                 <td ><p>Name</p><br></br>{val.PassengerName}</td>
                 <td><p> Email</p><br></br>{val.PassengerEmail}</td>
                 <td><p>Phone No</p><br></br>{val.PassengerPhoneNo}</td>
-                <td><p>Departure Date</p><br></br>{DepartDate}</td>
+                <td><p>Departure Date</p><br></br>{val.DepartDate}</td>
                 <td><p>Flight Class</p><br></br>{val.FlightClass}</td>
               </tr>
             </table>

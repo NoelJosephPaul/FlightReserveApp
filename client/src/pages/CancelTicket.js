@@ -54,8 +54,6 @@ function CancelTicket() {
           Search
         </button>
         {PassengerInfo.map((val, key) => {
-          let DepartDate = val.DepartDate;
-          DepartDate = DepartDate.toString().split("T")[0];
           return (
             <div className="ShowResults">
               <table id="cancelpassengertable">
@@ -78,7 +76,7 @@ function CancelTicket() {
                   <td>
                     <p>Departure Date</p>
                     <br></br>
-                    {DepartDate}
+                    {val.DepartDate}
                   </td>
                   <td>
                     <p>Flight Class</p>
