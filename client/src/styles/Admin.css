@@ -1,6 +1,6 @@
 #adminbody
 {
-    height:700px;
+    height:850px;
     justify-content: center;
     flex-direction: row;
 }
@@ -9,7 +9,7 @@
 {
     margin:10px;
 }
-.footer
+body div #addflightform
 {
-    display: none;
+    margin:0;
 }
