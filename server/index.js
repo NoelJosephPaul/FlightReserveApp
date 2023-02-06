@@ -159,16 +159,16 @@ app.delete("/passenger",(req,res) =>{
     })
 })
 
-/*app.put("/api/update",(req,res) =>{
-    const name = req.body.movieName;
-    const review = req.body.movieReview;
-    const sqlUpdate = "UPDATE movie_reviews SET movieReview = ? WHERE movieName = ? ;";
+app.put("/passenger",(req,res) =>{
+    const TicketNo = req.body.TicketNo;
+    const DepartDate = req.body.DepartDate;
+    const sqlUpdate = "UPDATE passenger SET DepartDate = ? WHERE TicketNo = ? ;";
 
-    db.query(sqlUpdate, [review, name], (err,result) => {
+    db.query(sqlUpdate, [DepartDate,TicketNo], (err,result) => {
        if (err) console.log(err);
     })
     
-})*/
+})
 app.listen(3001, () => {
   //start app
   console.log("running on port 3001");
