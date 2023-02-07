@@ -32,7 +32,7 @@ input
     width: 500px;
 }
 
-body form 
+div form 
 {
     
     text-align: center;
@@ -42,7 +42,6 @@ body form
     font-size: larger;
     align-content: center;
     align-items: center;
-    
 }
 
 body form input
