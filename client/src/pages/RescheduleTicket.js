@@ -97,7 +97,7 @@ function RescheduleTicket()
               </table>
               <br></br>
         <label>
-            <h1>Enter new date: </h1><br></br>
+            <h1>Select new date: </h1><br></br>
             <input
               type="date"
               min={mindate}

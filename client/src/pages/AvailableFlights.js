@@ -82,7 +82,7 @@ function AvailableFlights() {
                 <td><p>Arriving at</p><br></br>{val.Arrival}</td>
                 <td><p>Departure Time</p><br></br>{val.DepartTime}</td>
                 <td><p>Departure Date</p><br></br>{Date}</td>
-                <td><p>Fare</p><br></br>&#8377;{val.Fare}</td>
+                <td><p>Base Fare</p><br></br>&#8377;{val.Fare}</td>
                 
                 <td>
                   <br></br>

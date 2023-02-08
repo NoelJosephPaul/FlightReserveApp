@@ -16,7 +16,9 @@ function Passenger() {
   const Arrival = thisflightobj_deserialized.Arrival;
   const Date = thisflightobj_deserialized.Date;
   const DepartTime = thisflightobj_deserialized.DepartTime;
-  const Fare = thisflightobj_deserialized.Fare;
+  const [Fare,setFare]= useState(thisflightobj_deserialized.Fare);  
+  let BaseFare=thisflightobj_deserialized.Fare;
+
 
   const [PassengerName, setPassengerName] = useState("null");
   const [PassengerAge, setPassengerAge] = useState("null");
@@ -93,7 +95,7 @@ function Passenger() {
     setPassengerPhoneNo("null");
     setPassengerPassport("null");
     setPassengerGender("null");
-    setFlightClass("null");
+    
 
   };
 
@@ -197,7 +199,17 @@ function Passenger() {
               name="FlightClass"
               id="FlightClass"
               required
-              onChange={(e) => setFlightClass(e.target.value)}
+              onChange={(e) => { setFlightClass(e.target.value);
+                if(e.target.value==="First Class")
+                  setFare(BaseFare+(30/100)*BaseFare)
+                else if(e.target.value==="Business Class")
+                  setFare(BaseFare+(20/100)*BaseFare)
+                else if(e.target.value==="Premium Economy")
+                  setFare(BaseFare+(10/100)*BaseFare)
+                else if(e.target.value==="Economy")
+                  setFare(BaseFare)
+              }
+            }
             >
               <option value="Choose">-select-</option>
               <option value="First Class">First Class</option>
