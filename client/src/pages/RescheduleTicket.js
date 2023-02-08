@@ -9,6 +9,7 @@ function RescheduleTicket()
     const [TicketNo, setTicketNo] = useState("");
     const [PassengerInfo, setPassengerInfo] = useState([]);
     const [DepartDate, setDepartDate] = useState("");
+    const [count,setcount]=useState(0);
     let FlightNo;
 
 
@@ -39,12 +40,17 @@ function RescheduleTicket()
   
       let passengerobj_serialized = JSON.stringify(passengerobj);
       localStorage.setItem("passengerobj", passengerobj_serialized);
-      window.open("http://localhost:3000/ETicket");
+      
+      setcount(1);
     }
     
     return (
-    <body id ="reschedulebody">
+    <body id ="cancelticketbody">
+    {
+        count===0 &&
         <div id ="cancelouterdiv">
+            <h3>Reschedule your booking</h3>
+            <br></br>
             <h1>Enter your Ticket No</h1>
             <br></br>
             <input id="ticketno" onChange={(e) => setTicketNo(e.target.value)}></input>
@@ -107,6 +113,14 @@ function RescheduleTicket()
         }
         
         </div>
+    }
+    {   count===1 &&
+        <div id ="cancelouterdiv">
+            <h1>Your booking has been rescheduled</h1>
+            <br></br>
+            <button onClick={()=>window.open("http://localhost:3000/ETicket","_self")}>Generate E-Ticket</button>
+        </div>
+    }
     </body>
     )
 }

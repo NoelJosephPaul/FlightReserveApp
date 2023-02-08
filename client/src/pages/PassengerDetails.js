@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/PassengerDetails.css";
 import "../styles/Payment.css";
 
+
 import Axios from "axios";
 
 function Passenger() {
@@ -65,6 +66,10 @@ function Passenger() {
       alert("Please fill all the fields");
       window.open("http://localhost:3000/Passengerdetails","_self");
       
+    }
+    else if(PassengerPhoneNo.length<10)
+    {
+      alert("Invalid Phone Number");
     }
     else if(PassengerName!=="null" && PassengerAge!=="null" && PassengerEmail!=="null" && PassengerPhoneNo!=="null" && PassengerPassport!=="null" && PassengerGender!=="null" && PassengerAddress!=="null" && FlightClass!=="null")
     {
@@ -170,6 +175,8 @@ function Passenger() {
             Phone No:<br></br>
             <input
               type="number"
+              min={99}
+              onInput={(e)=>e.target.value=e.target.value.slice(0,10)}
               required
               onChange={(e) => setPassengerPhoneNo(e.target.value)}
             />

@@ -105,7 +105,7 @@ function Admin()
                         <input type="text" required onChange={(e) => setArrival(e.target.value)}/>
                     </label>
                     <label>
-                    DepartTime:<br></br>
+                    Departure Time:<br></br>
                     <input type="text" required onChange={(e) => setDepartTime(e.target.value)} />
                     </label>
                     <label>

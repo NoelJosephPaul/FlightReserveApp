@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Booking2.css";
+import "../styles/Contact.css";
 
 let mindate = new Date().toISOString().split("T")[0];
 

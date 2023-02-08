@@ -3,6 +3,11 @@
     text-align: center;
     align-items: center;
     align-content: center;
+    background-image: url("../assets/Last.jpg");
+    background-color: #ffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 #eticketouterdiv
@@ -10,6 +15,7 @@
     width: 680px;
     height:950px;
     border:1px solid black;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
     margin-left:32%;
     margin-top:20px;
     background-image: url("../assets/Ticket.jpeg");
@@ -59,6 +65,7 @@ p{
     margin:0px;
     padding: 0px;
     width: 100px;
+    background-color: transparent;
 }
 
 h2{
@@ -69,6 +76,14 @@ h2{
 {
     text-align: center;
     
+}
+
+#ShowResults td
+{
+    margin:0px;
+    padding-bottom: 10px;
+    width:1000px;
+    border: 1px solid black;
 }
 
 @media print {
@@ -95,5 +110,9 @@ h2{
     button
     {
         display: none;
+    }
+    #eticketbody
+    {
+        background-image: none;
     }
    }
