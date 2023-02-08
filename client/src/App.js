@@ -2,9 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Menu from "./pages/Menu";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 import Booking2 from "./pages/Booking2";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PassengerDetails from "./pages/PassengerDetails";
@@ -12,7 +10,6 @@ import AvailableFlights from "./pages/AvailableFlights";
 import ETicket from "./pages/ETicket";
 import CancelTicket from "./pages/CancelTicket";
 import RescheduleTicket from "./pages/RescheduleTicket";
-
 import Admin from "./pages/Admin";
 import Login from "./pages/Login";
 
@@ -25,9 +22,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/Booking2" element={<Booking2 />} />
           <Route path="/PassengerDetails" element={<PassengerDetails />} />
           <Route path="/AvailableFlights" element={<AvailableFlights />} />
